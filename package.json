@@ -1,0 +1,30 @@
+{
+  "name": "jmx-cli",
+  "version": "0.0.1",
+  "description": "Command Line Tool to manage JMX beans",
+  "keywords": [
+      "jxm",
+      "akka",
+      "cluster"
+  ],
+  "repository"  : {
+      "type" : "git",
+      "url"  : "https://github.com/hbouvier/jmx-cli.git"
+  },
+  "main" : "./lib/jmx-cli.js",
+  "bin"  : {
+      "jmx" : "./bin/jmx"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./bin/jmx status | bunyan -l debug"
+  },
+  "author": "Henri Bouvier",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "bunyan": "^1.8.4",
+    "jmx": "^0.5.0",
+    "node-options": "0.0.7"
+  }
+}
